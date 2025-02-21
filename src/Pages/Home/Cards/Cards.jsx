@@ -1,10 +1,10 @@
 import crd1 from "../../../assets/Images/card/crd1.jpg";
-// import crd2 from "../../../assets/Images/card/crd2.jpg";
-// import crd3 from "../../../assets/Images/card/crd3.jpg";
+import crd2 from "../../../assets/Images/card/crd2.jpg";
+import crd3 from "../../../assets/Images/card/crd3.jpg";
 
 const Cards = () => {
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto space-y-4">
       <div className="flex items-center justify-center text-center">
         <div>
           <p className="text-lg font-semibold">Welcome to Our</p>
@@ -15,8 +15,29 @@ const Cards = () => {
           </p>
         </div>
       </div>
-      <div>
-        <img src={crd1} alt="" />
+      <div className="container mx-auto flex justify-center gap-6">
+        <div className="w-1/3">
+          <img
+            src={crd1}
+            alt="Card 1"
+            className="w-full h-auto object-cover aspect-[4/3] shadow-2xl border-8 border-white"
+          />
+        </div>
+
+        <div className="w-1/3">
+          <img
+            src={crd2}
+            alt="Card 2"
+            className="w-full h-auto object-cover aspect-[4/3] shadow-2xl border-8 border-white"
+          />
+        </div>
+        <div className="w-1/3">
+          <img
+            src={crd3}
+            alt="Card 3"
+            className="w-full h-auto object-cover aspect-[4/3] shadow-2xl border-8 border-white"
+          />
+        </div>
       </div>
     </div>
   );
